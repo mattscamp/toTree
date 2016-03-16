@@ -14,7 +14,7 @@ var toTree = (function toTree(global) {
   function addChildren(children) {
     var childrenArr = [];
     if(children) {
-      for (var i = 0; i < 25; i++) {
+      for (var i = 0; i < children.length; i++) {
         if(children[i] !== undefined && children[i].tagName) {
           childrenArr.push(node(children[i]));
         }
